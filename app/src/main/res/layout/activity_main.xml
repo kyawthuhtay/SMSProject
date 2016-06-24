@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:id="@+id/MainLayout"
+    android:weightSum="1"
+    android:background="#ffcecbff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SMS Inbox"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView android:id="@+id/SMSListView"
+        android:layout_height="389dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="0.79" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compose"
+        android:id="@+id/btnCompose"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToCompose" />
+
+</LinearLayout>
